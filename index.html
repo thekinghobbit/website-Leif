@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leif Forrest  </title>
+    <link rel="icon" type="image/x-icon" href="img\logodif-nobm.ico">
+    <link rel="stylesheet" href="shadowNav.css" />
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+
+    <!-- This is a test to see smth -->
+
+    <nav id="navBar">
+      <a href="#home" class="homeBu"><img src="/img/logodif-nobm.ico" alt="logo" width="50" height="50"></a>
+      <header>Leif Forrest</header>
+      <ul>
+        <li><a href="#home" class="hover-underline-animation">// home</a></li>
+        <li><a href="#about" class="hover-underline-animation">// about</a></li>
+        <li><a href="#projects" class="hover-underline-animation">// projects</a></li>
+        <li><a href="#contact" class="hover-underline-animation">// contact</a></li>
+      </ul>
+    </nav>
+      <a id="home">
+        <div class="hero-image">
+          <div class="hero-text">
+            <h1 class="heroHead"><a href="#about" class="hover-underline-animation-white heroHead">Hello, my name is Leif Forrest.</a></h1>
+              <p class="heroBody">I am a computer science student at Gonzaga University.</p>
+          </div>
+        </div>
+      </a>
+    <section>
+      <a class="about" id="about">
+        <div >
+          <h2 data-aos="slide-left" data-aos-delay="100" data-aos-duration="500">About me.</h2>
+          <p data-aos="slide-left" data-aos-delay="100" data-aos-duration="600">
+          I am a second year student at Gonzaga University. Currently I am at junior standing and studying abroad in Florence, Italy for my fall 2022 semster.
+          </p>
+        </div>
+      </a>
+    </section>
+    <section id="projects">
+      <div >
+        <h2 data-aos="slide-left" data-aos-delay="100" data-aos-duration="500">Projects</h2>
+        <p data-aos="slide-left" data-aos-delay="100" data-aos-duration="600">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero obcaecati
+        corporis nisi amet.
+        </p>
+      </div>
+    </section>
+    <section id="contact">
+      <div >
+        <h2 data-aos="slide-left" data-aos-delay="100" data-aos-duration="500">Contact</h2>
+        <p data-aos="slide-left" data-aos-delay="100" data-aos-duration="600">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero obcaecati
+        corporis nisi amet.
+        </p>
+      </div>
+    </section>
+
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navBar").style.top = "0";
+          navBar.classList.add("scrolled");
+          console.log("scrolled")
+        } else {
+          document.getElementById("navBar").style.top = "-60px";
+          navBar.classList.remove("scrolled");
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
