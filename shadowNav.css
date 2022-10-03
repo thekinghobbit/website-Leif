@@ -48,22 +48,27 @@ nav ul li a {
   text-transform: uppercase;
 }
 section {
-  height: 100vh;
+  min-height: 100vh;
   display:flex;
   padding: 4rem;
   color: #000;
   font-size: 3rem;
-  align-items: center;
+  align-items: top;
 }
 section:nth-child(odd) {
   background-color: #f5f5f5;
-  display: grid;
-  place-items: center;
-  align-content: center;
-  min-height: 100ch;
 }
 .about{
   color: #000;
+}
+.columnA,
+.columnB,
+.columnC {
+    float: left;
+    width: 50%;
+    font-size: 30px;
+    padding: 25px;
+    text-align: justify;
 }
 
 .hover-underline-animation {
@@ -143,7 +148,7 @@ body, html {
     font-size: 45px;
   }
   .heroBody{
-    text-align: right;
+    text-align: left;
     font-size: 25px;
     color: #fff;
   }
